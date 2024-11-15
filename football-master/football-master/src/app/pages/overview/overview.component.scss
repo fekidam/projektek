@@ -1,0 +1,22 @@
+.overview-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    &__content {
+        width: 60rem;
+        table {
+            width: 100%;
+          }
+          
+          .mat-mdc-form-field {
+            font-size: 14px;
+            width: 100%;
+          }
+    }
+    
+}
+
+div{
+  background-color: #F3b39b;
+}

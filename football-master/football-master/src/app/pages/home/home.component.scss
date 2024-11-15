@@ -1,0 +1,15 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    width: 100%;
+    &__card {
+        background-image: url('../../../assets/home-background.png');
+        background-size: cover;
+        width: 40rem;
+        height: 25rem;
+        border-radius: 1rem;
+    }
+}

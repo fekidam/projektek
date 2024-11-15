@@ -1,0 +1,23 @@
+<div class="result-card-container" [matMenuTriggerFor]="menu">
+    <div class="result-card-container__wrapper">
+        <div class="result-card-container__wrapper__home-name">{{result.homeName}}</div>
+        <img [src]="result.homeImage" class="result-card-container__wrapper__home-image" height="50" width="50">
+        <div class="result-card-container__wrapper__home-goals">{{result.homeGoals}}</div>
+        <div class="result-card-container__wrapper__away-goals">{{result.awayGoals}}</div>
+        <img [src]="result.awayImage" class="result-card-container__wrapper__away-image" height="50" width="50">
+        <div class="result-card-container__wrapper__away-name">{{result.awayName}}</div>
+    </div>
+    
+</div>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="onDelete()">
+    <mat-icon>close</mat-icon>
+    <span>Delete</span>
+    </button>
+
+    <button mat-menu-item (click)="onEdit()">
+        <mat-icon>edit</mat-icon>
+        <span>Edit</span>
+    </button>
+</mat-menu>

@@ -1,0 +1,28 @@
+.dialog-container {
+    width: 36rem;
+    height: 25rem;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    mat-dialog-actions {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4rem 0 4rem;
+
+        .cancel-btn {
+            background-color: grey;
+            color: white;
+        }
+
+        .save-btn {
+            background-color: rgb(83, 174, 253);
+            color: white;
+        }
+    }
+}

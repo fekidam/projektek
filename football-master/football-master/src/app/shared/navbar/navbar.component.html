@@ -1,0 +1,30 @@
+<mat-toolbar>
+   <span class="title" (click)="navigateTo('home')">Football Bajnokság</span>
+   <span class="example-spacer"></span>
+   <div class="navigation-container">
+    <button
+      mat-button
+      class="example-icon favorite-icon"
+      [class.active]="activePage === 'overview'"
+      (click)="navigateTo('overview')"
+    >
+      <span>Tabella</span>
+    </button>
+    <button
+      mat-button
+      class="example-icon favorite-icon"
+      [class.active]="activePage === 'results'"
+      (click)="navigateTo('results')"
+    >
+      <span>Eredmények</span>
+    </button>
+    <button
+      mat-button
+      class="example-icon favorite-icon"
+      [class.active]="activePage === 'statistics'"
+      (click)="navigateTo('statistics')"
+    >
+      <span>Statisztikák</span>
+    </button>
+  </div>
+ </mat-toolbar>

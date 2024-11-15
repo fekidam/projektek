@@ -1,0 +1,39 @@
+<div class="dialog-container">
+    <h1 mat-dialog-title>Create a new match</h1>
+    <div mat-dialog-content class="dialog-container__content" [formGroup]="formGroup">
+        <mat-form-field appearance="fill">
+            <mat-label>Home Name</mat-label>
+            <input matInput formControlName="home_name">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Away Name</mat-label>
+            <input matInput formControlName="away_name">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Home Goal</mat-label>
+            <input matInput formControlName="home_goal">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Away Goal</mat-label>
+            <input matInput formControlName="away_goal">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Home Image</mat-label>
+            <input matInput formControlName="home_image">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Away Image</mat-label>
+            <input matInput formControlName="away_image">
+        </mat-form-field>
+    </div>
+
+    <mat-dialog-actions>
+        <button mat-button (click)="onCancel()" class="cancel-btn">Cancel</button>
+        <button mat-button class="save-btn" (click)="onSave()">Save</button>
+      </mat-dialog-actions>
+</div>

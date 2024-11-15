@@ -1,0 +1,11 @@
+<div class="results-page">
+    <div class="results-container">
+      <div class="result-container__content">
+        <ng-container *ngFor="let result of results$ | async">
+          <app-result-card [result]="result"></app-result-card>
+        </ng-container>
+        <button mat-button class="result-container__content_btn" (click)="openDialog()">Add New</button>
+      </div>
+    </div>
+  </div>
+  

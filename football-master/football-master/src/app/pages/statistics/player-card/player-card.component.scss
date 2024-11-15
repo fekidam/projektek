@@ -1,0 +1,50 @@
+@use 'src/styles/color.scss';
+.player-card-container {
+    width: 15rem;
+    height: 10rem;
+    margin-right: 1rem;
+    z-index: 0;
+    border-radius: 10px;
+    &__image {
+        position: relative;
+        left: 100px;
+        top: 21px;
+    }
+
+    &__achievement-name {
+        position: relative;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    &__name {
+        position: relative;
+        bottom: 39px;
+        font-weight: bold;
+        font-size: smaller;
+        width: fit-content;
+        opacity: 0.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1.5rem;
+    }
+
+    &__achievement-num {
+        position: relative;
+        left: 190px;
+        font-weight: bold;
+        bottom: 15px;
+        font-size: 20px;
+        width: fit-content;
+        height: 1.5rem;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.8;
+    }
+
+}

@@ -1,0 +1,29 @@
+@use 'src/styles/color.scss';
+
+.result-card-container {
+    width: 40rem;
+    display: flex;
+    background-color: color.$wild-sand;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    height: 3rem;
+
+    &__wrapper {
+        width: 30rem;
+        margin-left: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+
+        &__home-goals, &__away-goals {
+            background-color: color.$white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

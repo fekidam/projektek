@@ -1,0 +1,6 @@
+<div class="player-card-container" [ngStyle]="{'background-color': player.color}">
+    <div class="player-card-container__achievement-name">{{player.achievementName}}</div>
+    <img [src]="player.img" height="120" width="120" class="player-card-container__image">
+    <div class="player-card-container__achievement-num" [ngStyle]="{'background-color': player.color}"> <span>{{player.achievementNum}}</span></div>
+    <div class="player-card-container__name" [ngStyle]="{'background-color': player.color}">{{player.name}}</div>
+</div>

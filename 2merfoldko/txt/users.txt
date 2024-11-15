@@ -1,0 +1,2 @@
+a:5:{s:14:"felhasznalonev";s:5:"Admin";s:6:"jelszo";s:60:"$2y$10$9q9nW.VdV9kelHDlkLL4kOCF9vISD4Kj2fEXv4TJJz8S35BfG8MHi";s:7:"eletkor";s:10:"2000-01-20";s:3:"nem";s:6:"férfi";s:5:"email";s:15:"admin@gmail.com";}
+a:5:{s:14:"felhasznalonev";s:6:"heloka";s:6:"jelszo";s:60:"$2y$10$D4eBwY0S7oCMu3T3EPMG8.RE8IXp2eDKGHSHCvtcyU4FEQJSHXFiK";s:7:"eletkor";s:10:"2000-01-01";s:3:"nem";s:6:"férfi";s:5:"email";s:16:"heloka@gmail.com";}

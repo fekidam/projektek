@@ -1,0 +1,14 @@
+adamin,masodikkep
+adamin,harmadikkep
+adamin,negyedikkep
+adamin,hatodikkep
+adamin,hetedikkep
+adamin,nyolcadikkep
+adamin,tizedikkep
+adamin,kilencedikkep
+adamin,otodikkep
+Admin,masodikkepAdmin,masodikkep
+Admin,masodikkep
+Admin,negyedikkep
+Admin,otodikkep
+Admin,hetedikkep

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="css.css">
+    <script src="jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<div id="level-selector">
+    <button id="first-level"><< Első</button>
+    <button id="prev-level">< Vissza</button>
+    <span id="current-level">1</span>
+    <button id="next-level">Tovább ></button>
+    <button id="last-level">Utolsó >></button>
+</div>
+<ul id="menu">
+    <li><a href="#">Megoldás</a></li>
+    <li><a href="#">Alaphelyzet</a></li>
+    <li><a href="#">Véletlenszerű</a></li>
+    <li><a href="#">Segítség</a></li>
+</ul>
+<div id="game-info">
+    <div id="time">Idő: <span id="time-value">0:00</span></div>
+    <div id="moves">Lépésszám: <span id="moves-value">0</span></div>
+</div>
+<div id="game-container">
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+</div>
+<div id="volume-control" style="position: fixed; bottom: 10px; right: 10px;">
+    <i id="speaker-icon" class="fas fa-volume-up" style="cursor: pointer;"></i>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5" style="width: 100px;">
+</div>
+<div id="congratulations-dialog" title="Gratuláció">
+    <p>Gratulálok! Megoldottad a pályát!</p>
+</div>
+<div id="help-dialog" title="Játékszabályok">
+    <p>Az 'All out' játék célja, hogy minden lámpát kikapcsolj az alábbiak szerint:</p>
+    <ul>
+        <li>Minden gombra kattintva megváltoztatja saját és a közvetlen szomszédai állapotát.Ha ki volt kapcsolva, akkor bekapcsol és fordítva.</li>
+        <li>A gombok ki- és bekapcsolásával érd el, hogy minden lámpa kikapcsolt állapotba kerüljön.</li>
+        <li>Ha elakadtál a Megoldás gombra kattintva láthatod a lépéseket.</li>
+    </ul>
+</div>
+<div id="scoreboard">
+    <div id="score">Eredmény:</div>
+    <ul id="top-scores-list"></ul>
+</div>
+<div id="overlay"></div>
+<div id="overlay2"></div>
+<div id="audio-enable-dialog" title="Audio engedélyezése">
+    <p>Kérjük, kattints ide a háttérzene lejátszásának engedélyezéséhez.</p>
+</div>
+<div id="name-entry-dialog" title="Név beírása">
+    <form id="name-form">
+        <label for="player-name">Kérlek add meg a neved:</label>
+        <input type="text" id="player-name" name="player-name" required>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,1 +1,1 @@
-A Bevasarlo projekt itthoni hobbi gyakorlásként készült, a többi pedig iskolai feladat volt. Ezeken kívül jelen pillanatban is dolgozom három munkaprogramon, amelyek webfejlesztést és mobil alkalmazás fejlesztést tartalmaznak.
+
